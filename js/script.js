@@ -1,12 +1,12 @@
-// simple change model
-document.getElementById("change-colour").addEventListener("click", function() {
-    document.getElementById("model").src = "/models/white-sofa.glb";
-});
+// // simple change model
+// document.getElementById("change-colour").addEventListener("click", function() {
+//     document.getElementById("model").src = "/models/white-sofa.glb";
+// });
 
-// example with showing content
-document.getElementById("change-colour").addEventListener("click", function() {
-    document.getElementById("model-info").style.display = "block";
-});
+// // example with showing content
+// document.getElementById("change-colour").addEventListener("click", function() {
+//     document.getElementById("model-info").style.display = "block";
+// });
 
 // // example with multiple models
 // var myModels = ["/models/orange.glb", "/models/teal.glb", "/models/orange.glb", "/models/teal.glb",]
@@ -18,6 +18,11 @@ document.getElementById("change-colour").addEventListener("click", function() {
 //     }
 //     document.getElementById("model").src = myModels[counter];
 // });
+
+document.querySelector('.change-colour').addEventListener('click', function() {
+    const viewer = document.querySelector('model-viewer');
+    viewer.src = './models/sofa_red.glb'; // Replace 'sofa_red.glb' with the file representing the red sofa
+});
 
 // different views
 document.getElementById('view-angle1').addEventListener('click', function() {
