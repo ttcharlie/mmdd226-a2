@@ -8,9 +8,10 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-
+    <h1>Shop Furniture</h1>
     <div class="furniture-container">
         <model-viewer src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
+            <button class="hotspot-button" onclick="changeSofaColor()">Change Color</button>
         </model-viewer>
         
         <model-viewer src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
