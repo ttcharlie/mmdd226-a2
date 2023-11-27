@@ -3,10 +3,10 @@ document.getElementById("change-colour").addEventListener("click", function() {
     document.getElementById("model").src = "/models/white-sofa.glb";
 });
 
-// // example with showing content
-// document.getElementById("change-colour").addEventListener("click", function() {
-//     document.getElementById("model-info").style.display = "block";
-// });
+// example with showing content
+document.getElementById("change-colour").addEventListener("click", function() {
+    document.getElementById("model-info").style.display = "block";
+});
 
 // // example with multiple models
 // var myModels = ["/models/orange.glb", "/models/teal.glb", "/models/orange.glb", "/models/teal.glb",]
