@@ -1,21 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const sofaViewer = document.getElementById('sofaViewer');
-    const sofaControls = document.getElementById('sofa-controls');
+const modelViewerVariants = document.querySelector("model-viewer#sofaViewer");
+const select = document.querySelector('#variant');
 
-    sofaControls.addEventListener('click', (event) => {
-        const colorString = event.target.dataset.color;
-        const [material] = sofaViewer.model.materials;
-        if (material) {
-            material.pbrMetallicRoughness.setBaseColorFactor(colorString);
-        }
-    });
+modelViewerVariants.addEventListener('load', () => {
+  const names = modelViewerVariants.availableVariants;
+  for (const name of names) {
+    const option = document.createElement('option');
+    option.value = name;
+    option.textContent = name;
+    select.appendChild(option);
+  }
+  // Adds a default option.
+  const option = document.createElement('option');
+    option.value = 'default';
+    option.textContent = 'Default';
+    select.appendChild(option);
+});
 
-    // Similar event listeners for chair and table models (if present)
-    // const chairViewer = document.getElementById('chairViewer');
-    // const chairControls = document.getElementById('chair-controls');
-    // ...
-
-    // const tableViewer = document.getElementById('tableViewer');
-    // const tableControls = document.getElementById('table-controls');
-    // ...
+select.addEventListener('input', (event) => {
+  modelViewerVariants.variantName = event.target.value === 'default' ? null : event.target.value;
 });
