@@ -22,7 +22,7 @@ document.getElementById("change-colour").addEventListener("click", function() {
 // different views
 document.getElementById('view-angle1').addEventListener('click', function() {
     const viewer = document.querySelector('model-viewer');
-    viewer.cameraOrbit = '0deg 90deg 3m'; // Set the desired camera orbit for the top view
+    viewer.cameraOrbit = '90deg 0deg 3m'; // Set the desired camera orbit for the top view
 });
 
 document.getElementById('view-angle2').addEventListener('click', function() {
