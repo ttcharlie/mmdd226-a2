@@ -1,29 +1,32 @@
-/* .Hotspot {
-    background-color: #ffffff;
-    color: rgb(9, 47, 34);
-    border-radius: 3px;
-    padding: 3px;
-}
-.larger-example {
-    width: 600px;
-    height: 500px;
-    background-color: rgb(208, 198, 182);
-} */
-
 h1 {
     text-align: center;
 }
 
 .furniture-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; /* Distribute items with space between them */
     align-items: center;
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; 
+    max-width: 1200px; /* Limit maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    padding: 0 10px; /* Add padding to accommodate smaller screens */
 }
 model-viewer {
-    width: 30%; 
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width as needed */
+    max-width: calc(33.33% - 20px); /* Adjust max-width as needed */
     height: 400px;
+}
+
+.hotspot-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
 }
