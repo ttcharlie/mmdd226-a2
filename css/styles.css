@@ -17,15 +17,29 @@ h1 {
     padding: 20px;
 }
 
+/* .furniture-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    padding: 0 10px; 
+} */
 
-.model-container {
-    text-align: center;
-    width: 300px;
-}
+/* model-viewer {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    height: 400px;
+    background-color: lightgrey;
+} */
 
 .model-container model-viewer {
     height: 400px;
-    max-width: calc(33.33% - 20px); /* Adjust max-width as needed */
+    max-width: 100%;
     background-color: lightgrey;
 }
 
