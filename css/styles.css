@@ -36,6 +36,10 @@ h2 {
     background-color: lightgrey;
 }
 
+#changeColorBtn{
+
+margin: 10px;}
+
 .product-info {
     text-align: left;
     border-radius: 5px;
