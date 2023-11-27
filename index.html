@@ -10,7 +10,13 @@
 <body>
     <h1>Top Furniture</h1>
     <div class="furniture-container">
-        <model-viewer src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
+        <model-viewer id="sofaViewer" src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
+            <!-- Add your content for the sofa here -->
+            <div class="controls" id="sofa-controls">
+                <button data-color="#ff0000">Red</button>
+                <button data-color="#00ff00">Green</button>
+                <button data-color="#0000ff">Blue</button>
+            </div>
             <button class="hotspot-button" onclick="changeSofaColor()">Change Color</button>
         </model-viewer>
         
