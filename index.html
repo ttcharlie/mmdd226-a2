@@ -10,31 +10,52 @@
 <body>
     <h1>Recommended For You</h1>
     <div class="furniture-container">
-        <model-viewer id="sofaViewer" camera-controls touch-action="pan-y" src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
-            <div class="controls">
-                <div>Color: 
-                    <select id="variant">
-                        <option value="brown">Brown</option>
-                        <option value="white">White</option>
-                    </select>
+        <div class="model-container">
+            <model-viewer id="sofaViewer" camera-controls touch-action="pan-y" src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
+                <div class="controls">
+                    <div>
+                        Color: 
+                        <select id="sofaVariant">
+                            <option value="brown">Brown</option>
+                            <option value="white">White</option>
+                        </select>
+                        <button id="changeColorBtn">Change Color</button>
+                    </div>
                 </div>
+            </model-viewer>
+            <div class="product-info">
+                <h3>Leather Sofa</h3>
+                <p>$290</p>
             </div>
-        </model-viewer>
-        
-        <model-viewer src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/chair.png" shadow-intensity="1">
-            <button class="Hotspot" slot="hotspot-1" data-position="-1.4260106941965107m 1.146343445349702m 3.8166241344584377m" data-normal="-0.7622915084493551m 0.1765521360998554m 0.6226885251749749m" data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">Chair Back</div>
-            </button>
-        </model-viewer>
-        
-        <model-viewer src="./models/table.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/table.png" shadow-intensity="1" camera-orbit="45deg 45deg 3m">
-            <button class="Hotspot" slot="hotspot-1" data-position="-19.30300832000933m 0.3431033557576622m 2.6614163375103117m" data-normal="-0.4544578011364071m -0.02650453695625014m 0.8903738633332612m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Teak Wood</div>
-        </button>
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
         </div>
-        </model-viewer>
+        
+        <div class="model-container">
+            <model-viewer src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/chair.png" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1" data-position="-1.4260106941965107m 1.146343445349702m 3.8166241344584377m" data-normal="-0.7622915084493551m 0.1765521360998554m 0.6226885251749749m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Chair Back</div>
+                </button>
+            </model-viewer>
+            <div class="product-info">
+                <h3>Dining Chair</h3>
+                <p>$65</p>
+            </div>
+        </div>
+        
+        
+        <div class="model-container">
+            <model-viewer src="./models/table.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/table.png" shadow-intensity="1" camera-orbit="45deg 45deg 3m">
+                <button class="Hotspot" slot="hotspot-1" data-position="-19.30300832000933m 0.3431033557576622m 2.6614163375103117m" data-normal="-0.4544578011364071m -0.02650453695625014m 0.8903738633332612m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Teak Wood</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            </model-viewer>
+            <div class="product-info">
+                <h3>Dining Table</h3>
+                <p>$126</p>
+            </div>
+        </div>
     </div>
 
     <!-- <model-viewer src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
