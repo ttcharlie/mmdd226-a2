@@ -1,21 +1,22 @@
-const modelViewerVariants = document.querySelector("model-viewer#sofaViewer");
-const select = document.querySelector('#variant');
+document.addEventListener('DOMContentLoaded', function() {
+    const sofaViewer = document.getElementById('sofaViewer');
+    const selectSofaVariant = document.getElementById('sofaVariant');
 
-modelViewerVariants.addEventListener('load', () => {
-  const names = modelViewerVariants.availableVariants;
-  for (const name of names) {
-    const option = document.createElement('option');
-    option.value = name;
-    option.textContent = name;
-    select.appendChild(option);
-  }
-  // Adds a default option.
-  const option = document.createElement('option');
-    option.value = 'default';
-    option.textContent = 'Default';
-    select.appendChild(option);
-});
+    sofaViewer.addEventListener('load', () => {
+        // Assuming your sofa model has two color variants: 'color1' and 'color2'
+        const variantOptions = ['brown', 'white'];
 
-select.addEventListener('input', (event) => {
-  modelViewerVariants.variantName = event.target.value === 'default' ? null : event.target.value;
+        for (const variant of variantOptions) {
+            const option = document.createElement('option');
+            option.value = variant;
+            option.textContent = `Color ${variant.charAt(variant.length - 1)}`;
+            selectSofaVariant.appendChild(option);
+        }
+    });
+
+    selectSofaVariant.addEventListener('input', (event) => {
+        sofaViewer.variantName = event.target.value === 'default' ? null : event.target.value;
+    });
+
+    // Additional setup or logic for other furniture models (chair, table, etc.) if present
 });
