@@ -3,8 +3,21 @@
 * {
     font-family: 'Nunito Sans', sans-serif;}
 
-h1 {
+h2 {
     text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    background-image: url('/images/hero.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjust to cover the entire background */
+    background-position: center; /* Center the image */
 }
 
 .furniture-container {
