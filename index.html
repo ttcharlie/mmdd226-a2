@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 2.2</title>
     <link rel="stylesheet" href="css/styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-    
-    <model-viewer id="model" src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
-    </model-viewer>
-    <button id="change-colour" class="Hotspot" slot="hotspot-1" data-position="0.24462271005400027m 0.927094956884221m -0.27987364024726524m" data-normal="-0.3293704410321221m 0.436550608196851m 0.8372208066318377m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">Change Colour</div>
-    </button>
-
     <model-viewer src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
-        <button class="Hotspot" slot="hotspot-1" data-position="-12.251976084452883m 0.5617144089113009m -1.2174325102804766m" data-normal="-0.9951792591505061m -0.08948375404072158m -0.04013601773257808m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Leather</div>
+        <button class="change-colour" slot="hotspot-1" data-position="-12.251976084452883m 0.5617144089113009m -1.2174325102804766m" data-normal="-0.9951792591505061m -0.08948375404072158m -0.04013601773257808m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Change Colour</div>
         </button>
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
