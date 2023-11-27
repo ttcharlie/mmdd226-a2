@@ -18,6 +18,7 @@ model-viewer {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width as needed */
     max-width: calc(33.33% - 20px); /* Adjust max-width as needed */
     height: 400px;
+    background-color: lightgrey;
 }
 
 .hotspot-button {

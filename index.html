@@ -15,9 +15,23 @@
         </model-viewer>
         
         <model-viewer src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+            <button class="Hotspot" slot="hotspot-1" data-position="-1.4260106941965107m 1.146343445349702m 3.8166241344584377m" data-normal="-0.7622915084493551m 0.1765521360998554m 0.6226885251749749m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Chair Back</div>
+            </button>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
         </model-viewer>
         
         <model-viewer src="./models/table.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/table.png" shadow-intensity="1" camera-orbit="45deg 45deg 3m">
+            <div class="HotspotAnnotation">Teak Wood</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
         </model-viewer>
     </div>
 
@@ -57,10 +71,7 @@
         </button>
     </model-viewer>
      -->
-    
-    <!-- <div id="model-info">
-        Info about the model
-    </div> -->
+
     
 </body>
 <script src="js/script.js"></script>
