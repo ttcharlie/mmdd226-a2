@@ -15,6 +15,20 @@
         <div class="HotspotAnnotation">Change Colour</div>
     </button>
 
+    <model-viewer src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
+        <button class="Hotspot" slot="hotspot-1" data-position="-12.251976084452883m 0.5617144089113009m -1.2174325102804766m" data-normal="-0.9951792591505061m -0.08948375404072158m -0.04013601773257808m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Leather</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+ 
+    </model-viewer>
+    
+
     <model-viewer id="model" src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/chair.png" shadow-intensity="1">
     </model-viewer>
     
