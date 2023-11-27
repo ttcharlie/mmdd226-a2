@@ -1,22 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const sofaViewer = document.getElementById('sofaViewer');
-    const selectSofaVariant = document.getElementById('sofaVariant');
+const modelViewer = document.getElementById('colorModel');
+const changeColorBtn = document.getElementById('changeColorBtn');
 
-    sofaViewer.addEventListener('load', () => {
-        // Assuming your sofa model has two color variants: 'color1' and 'color2'
-        const variantOptions = ['brown', 'white'];
-
-        for (const variant of variantOptions) {
-            const option = document.createElement('option');
-            option.value = variant;
-            option.textContent = `Color ${variant.charAt(variant.length - 1)}`;
-            selectSofaVariant.appendChild(option);
-        }
-    });
-
-    selectSofaVariant.addEventListener('input', (event) => {
-        sofaViewer.variantName = event.target.value === 'default' ? null : event.target.value;
-    });
-
-    // Additional setup or logic for other furniture models (chair, table, etc.) if present
+changeColorBtn.addEventListener('click', () => {
+    // Modify the color property of the model
+    const material = modelViewer.model.materials[0]; // Assuming the color change is applicable to the first material
+    material.pbrMetallicRoughness.baseColorFactor = [0.5, 0.2, 0.8, 1.0]; // Change color to purple, for example
 });

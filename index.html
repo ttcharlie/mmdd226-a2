@@ -12,17 +12,8 @@
     <div class="furniture-container">
         <div class="model-container">
             <model-viewer id="sofaViewer" camera-controls touch-action="pan-y" src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
-                <div class="controls">
-                    <div>
-                        Color: 
-                        <select id="sofaVariant">
-                            <option value="brown">Brown</option>
-                            <option value="white">White</option>
-                        </select>
-                        <button id="changeColorBtn">Change Color</button>
-                    </div>
-                </div>
             </model-viewer>
+            <button id="changeColorBtn">Change Color</button>
             <div class="product-info">
                 <h3>Leather Sofa</h3>
                 <p>$290</p>
