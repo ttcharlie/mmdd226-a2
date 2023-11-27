@@ -1,6 +1,6 @@
 // simple change model
 document.getElementById("change-colour").addEventListener("click", function() {
-    document.getElementById("model").src = "/models/teal.glb";
+    document.getElementById("model").src = "/models/white-sofa.glb";
 });
 
 // example with showing content
