@@ -6,10 +6,10 @@ let currentColor = 'brown'; // Initial color
 changeColorBtn.addEventListener('click', () => {
     // Toggle between different model sources based on the current color
     if (currentColor === 'brown') {
-        modelViewer.src = '../models/white.glb'; // Change to white model
+        modelViewer.src = '/models/white.glb'; // Change to white model
         currentColor = 'white';
     } else {
-        modelViewer.src = '../models/sofa.glb'; // Change back to brown model
+        modelViewer.src = '/models/sofa.glb'; // Change back to brown model
         currentColor = 'brown';
     }
 });
