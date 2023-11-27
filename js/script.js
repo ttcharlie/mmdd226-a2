@@ -19,3 +19,14 @@ document.getElementById("change-colour").addEventListener("click", function() {
 //     document.getElementById("model").src = myModels[counter];
 // });
 
+// different views
+document.getElementById('view-angle1').addEventListener('click', function() {
+    const viewer = document.querySelector('model-viewer');
+    viewer.cameraOrbit = '0deg 90deg 3m'; // Set the desired camera orbit for the top view
+});
+
+document.getElementById('view-angle2').addEventListener('click', function() {
+    const viewer = document.querySelector('model-viewer');
+    viewer.cameraOrbit = '45deg 45deg 3m'; // Set the desired camera orbit for the side view
+});
+
