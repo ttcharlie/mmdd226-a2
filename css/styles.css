@@ -12,12 +12,24 @@ h2 {
     text-align: center;
 }
 
-.hero-image {
-    width: 100%;
-    height: 300px; /* Adjust the height as needed */
-    background-image: url('../images/hero.jpg'); /* Replace with your image path */
-    background-size: cover; /* Adjust to cover the entire background */
-    background-position: center; /* Center the image */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;    
+}
+
+h2 {
+    padding: 40px;
 }
 
 .furniture-container {
@@ -39,6 +51,35 @@ h2 {
 #changeColorBtn{
     margin: 10px;
 }
+
+.Hotspot{
+    position: absolute;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.Hotspot:hover{
+ background-color: lightgray;
+}
+
+.HotspotAnnotation {
+    display: none;
+    position: absolute;
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+}
+.Hotspot:hover .HotspotAnnotation {
+    display: block;
+}
+
 
 .product-info {
     text-align: left;
