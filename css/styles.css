@@ -64,8 +64,11 @@ h2 {
 
 #topViewerBtn,
 #sofaSideViewBtn,
-#chairTopViewBtn {
- margin-top: 10px;
+#chairTopViewBtn,
+#resetSofaViewBtm,
+#resetChairViewBt,
+#resetTableViewBtn {
+ margin-top: 20px;
 }
 
 .Hotspot{
