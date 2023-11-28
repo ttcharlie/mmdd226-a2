@@ -24,7 +24,7 @@ chairWoodDropdown.addEventListener('change', () => {
     if (selectedColor === 'oak') {
         chairViewer.src = './models/chair.glb'; // Change to oak wood
     } else if (selectedColor === 'teak') {
-        chairViewer.src = './models/darkbrownChair.glb'; // Change to teak wood
+        chairViewer.src = './models/teak-c.glb'; // Change to teak wood
     }
 });
 
