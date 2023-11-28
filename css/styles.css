@@ -58,8 +58,14 @@ h2 {
     background-color: lightgrey;
 }
 
-#changeColorBtn{
+#changeColorBtn {
     margin: 10px;
+}
+
+#topViewerBtn,
+#sofaSideViewBtn,
+#chairTopViewBtn {
+ margin-top: 10px;
 }
 
 .Hotspot{
@@ -93,7 +99,6 @@ h2 {
 .dropdown {
     margin: 10px;
 }
-
 
 .product-info {
     text-align: left;

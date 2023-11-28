@@ -43,9 +43,35 @@ tableWoodsDropdown.addEventListener('change', () => {
 });
 
 
-// Change table view 
+// Change  furniture camera view 
+const sofaSideViewBtn = document.getElementById('sofaSideViewBtn');
+const chairTopViewBtn = document.getElementById('chairTopViewBtn');
 const topViewerBtn = document.getElementById('topViewerBtn');
+
+const resetSofaViewBtn = document.getElementById('resetSofaViewBtn');
+const resetChairViewBtn = document.getElementById('resetChairViewBtn');
+const resetTableViewBtn = document.getElementById('resetTableViewBtn');
 
 topViewerBtn.addEventListener('click', () => {
     tableViewer.cameraOrbit = '35.26deg 22.88deg 2.832m'; 
+});
+
+sofaSideViewBtn.addEventListener('click', () => {
+    sofaViewer.cameraOrbit = '-30.91deg 80.79deg 4.735m'; 
+});
+
+chairTopViewBtn.addEventListener('click', () => {
+    chairViewer.cameraOrbit = '35.26deg 22.88deg 3.686m'; 
+});
+
+resetSofaViewBtn.addEventListener('click', () => {
+    sofaViewer.cameraOrbit = '-91.95deg 80.51deg 4.735m';
+});
+
+resetChairViewBtn.addEventListener('click', () => {
+    chairViewer.cameraOrbit = '10deg 70deg 3.686m';
+});
+
+resetTableViewBtn.addEventListener('click', () => {
+    tableViewer.cameraOrbit = '0deg 75deg 2.832m';
 });
